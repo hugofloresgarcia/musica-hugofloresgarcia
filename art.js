@@ -4,6 +4,14 @@
   var v = document.createElement('div'); v.id = 'vines'; document.body.appendChild(v);
   var d = document.createElement('div'); d.className = 'fun-divider';
   var f = document.querySelector('footer'); if (f) f.parentNode.insertBefore(d, f);
+  if (location.pathname === '/' || location.pathname === '/index.html') {
+    var h = document.querySelector('main h1, h1');
+    if (h) {
+      var b = document.createElement('p'); b.style.textAlign = 'center';
+      b.innerHTML = '<a href="https://hugofloresgarcia.art">back home? 🌻</a>';
+      h.parentNode.insertBefore(b, h.nextSibling);
+    }
+  }
 })();
 // generative flower + vine frame for the homepage.
 // p5 instance mode (cf. wormhole.js). port of hugo's flowerbeds
