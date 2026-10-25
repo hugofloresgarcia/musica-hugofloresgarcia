@@ -17,3 +17,36 @@ body, body[data-pinned-theme="light"] {
   --light-m: #444; --light-m-acc: #000; --light-m-acc-80: rgba(0,0,0,.8);
   --light-b-m: #777; --light-f-m: #222;
 }
+
+/* ---- v2: match hugofloresgarcia.art fonts, layout, logo ---- */
+body, button, input, select, textarea {
+  font-family: monospace !important;
+  letter-spacing: normal;
+}
+body { font-size: 16px; line-height: 1.4; }
+
+/* headings at the art site's modest scale, bold */
+h1 { font-size: 32px !important; font-weight: bold; letter-spacing: normal; text-align: center; }
+h2 { font-size: 1.4em !important; }
+h3 { font-size: 1.17em !important; }
+
+/* header: no bar, just a small mono link with a sunflower for a logo */
+header { background: transparent !important; border: none !important; box-shadow: none !important; }
+header #logo svg { display: none !important; }
+#logo::before { content: "🌻 "; }
+
+/* footer squiggle lives in .fun-divider (art.js inserts it) */
+
+/* text links in blue like the art site; player & action controls stay black */
+main a:not([class]) { color: #0000ee; }
+
+/* vine frame behind everything, never blocking clicks */
+#vines canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+body > header, body > main, body > footer, body > .fun-divider { position: relative; z-index: 1; }
