@@ -352,6 +352,46 @@ let vineSketch = function (p) {
 
 new p5(vineSketch, 'vines');
 
+
+// --- homepage release grouping (mirrors hugofloresgarcia.art sections) ---
+(function () {
+  if (location.pathname !== '/' && location.pathname !== '/index.html') return;
+  var MAP = {
+    'aguante-tacuazin-at-the-lake': 0, 'los-chuchitos-live-at-sound-potluck-11222025': 0,
+    'the-air-is-full': 0, 'sound-collage-march-28th-2024': 0, 'dueto-mi-m-y-mi-p': 0,
+    'introspections': 0, 'the-ritual-all-in-good-time': 0,
+    'world-of-mouth-binaural-version': 1, 'confluyo-yo-el-ambiente-me-sigue': 1,
+    'voy-viviendo': 2, 'jailbreak': 2, '3am-zoomies': 2, 'el-sol-sale-a-cantar': 2,
+    'mary-jane': 2, 'bloom': 2, 'poinciana': 2, 'pp': 2, 'camilla': 2,
+    'little-fish': 2, 'cant-help-but-feel-alone': 2
+  };
+  var NAMES = ['improvised music \ud83c\udf00', 'with neural nets \ud83e\udde0', 'tunes \ud83c\udfb6'];
+  var releases = document.querySelectorAll('.page_grid .release');
+  if (!releases.length) return;
+  var gridPage = releases[0].closest('.page');
+  if (!gridPage) return;
+  var buckets = [[], [], []];
+  releases.forEach(function (r) {
+    var a = r.querySelector('a[href]');
+    var slug = a ? a.getAttribute('href').replace(/\/$/, '') : '';
+    var g = MAP.hasOwnProperty(slug) ? MAP[slug] : 2;
+    buckets[g].push(r);
+  });
+  NAMES.forEach(function (name, i) {
+    if (!buckets[i].length) return;
+    var h = document.createElement('h2');
+    h.className = 'group-heading'; h.textContent = name;
+    var page = gridPage.cloneNode(false);
+    var grid = document.createElement('div'); grid.className = 'page_grid';
+    var inner = document.createElement('div');
+    buckets[i].forEach(function (r) { inner.appendChild(r); });
+    grid.appendChild(inner); page.appendChild(grid);
+    gridPage.parentNode.insertBefore(h, gridPage);
+    gridPage.parentNode.insertBefore(page, gridPage);
+  });
+  gridPage.remove();
+})();
+
 // turn each .fun-divider into a row of wiggling tilde "worms".
 // progressive enhancement: without JS the CSS shows a static ~ row.
 (function () {

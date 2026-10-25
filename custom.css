@@ -50,3 +50,6 @@ main a:not([class]) { color: #0000ee; }
   z-index: 0;
 }
 body > header, body > main, body > footer, body > .fun-divider { position: relative; z-index: 1; }
+
+/* homepage group headings */
+.group-heading { text-align: center; margin: 3.5rem 0 0.5rem; font-size: 1.4em; }
