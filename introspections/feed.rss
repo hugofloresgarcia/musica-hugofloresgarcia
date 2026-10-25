@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" >
+    <channel>
+        <atom:link href="https://music.hugofloresgarcia.art/introspectionsfeed.rss" rel="self" type="application/rss+xml"/>
+        <description>Faircamp 2.0.1</description>
+        <generator>Faircamp 2.0.1 (unknown revision)</generator>
+        <image>
+    <height>920</height>
+    <link>https://music.hugofloresgarcia.art/introspections/</link>
+    <title>introspections</title>
+    <url>https://music.hugofloresgarcia.art/feed_eQFXosaWmVQ.jpg</url>
+    <width>920</width>
+</image>
+
+        <language>en</language>
+        <lastBuildDate>Sun, 25 Oct 2026 16:46:36 +0000</lastBuildDate>
+        <link>https://music.hugofloresgarcia.art/introspections/</link>
+        <title>introspections</title>
+        
+        <item><guid>https://music.hugofloresgarcia.art/introspections-introspection-i/</guid>
+<link>https://music.hugofloresgarcia.art/introspections-introspection-i/</link>
+<title>hugo flores garcía – introspection i</title></item>
+<item><guid>https://music.hugofloresgarcia.art/introspections-introspection-ii/</guid>
+<link>https://music.hugofloresgarcia.art/introspections-introspection-ii/</link>
+<title>hugo flores garcía – introspection ii</title></item>
+<item><guid>https://music.hugofloresgarcia.art/introspections-introspection-iii/</guid>
+<link>https://music.hugofloresgarcia.art/introspections-introspection-iii/</link>
+<title>hugo flores garcía – introspection iii</title></item>
+    </channel>
+</rss>
