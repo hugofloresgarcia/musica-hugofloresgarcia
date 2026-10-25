@@ -1,0 +1,56 @@
+:root {
+    --cover-border-radius: 0;
+    --ul-list-style-type: square;
+}
+body {
+    
+--b-acc: hsl(0 0% 31.69%);
+--b-acc-80: hsl(0 0% 31.69% / 80%);
+--b-m: hsl(0 0% 52%);
+--b1: hsl(0 0% 90%);
+--b1-90: hsl(0 0% 90% / 90%);
+--b1-80: hsl(0 0% 90% / 80%);
+--b2: hsl(0 0% 76.83%);
+--b2-80: hsl(0 0% 76.83% / 80%);
+--b3: hsl(0 0% 62.06%);
+--f-acc: hsl(0 0% 100%);
+--f-m: hsl(0 0% 28%);
+--f1: hsl(0 0% 0%);
+--f1-focus: var(--fg-3);
+--f1-veil: hsl(0 0% 0% / var(--veil-a));
+--f2: hsl(0 0% 8.6%);
+--f3: hsl(0 0% 28.06%);
+--f3-focus: var(--bg-mg);
+--m: hsl(0 0% 38.86%);
+--m-acc: hsl(0 0% 31.69%);
+--m-acc-80: hsl(0 0% 31.69% / 80%);
+
+}
+@supports (color: oklch(0% 0% 0)) {
+    body {
+        
+--b-acc: oklch(38% 0% 95);
+--b-acc-80: oklch(38% 0% 95 / 80%);
+--b-m: oklch(62.8% 13.803478% 95);
+--b1: oklch(95.404% 2.1582966% 95);
+--b1-90: oklch(95.404% 2.1582966% 95 / 90%);
+--b1-80: oklch(95.404% 2.1582966% 95 / 80%);
+--b2: oklch(86.136% 6.328642% 95);
+--b2-80: oklch(86.136% 6.328642% 95 / 80%);
+--b3: oklch(75.6% 10.4048% 95);
+--f-acc: oklch(100% 0% 0);
+--f-m: oklch(45% 14.815326% 95);
+--f1: oklch(0% 0% 95);
+--f1-focus: var(--f3);
+--f1-veil: oklch(0% 0% 0 / 3.4%);
+--f2: oklch(20% 8.816778% 95);
+--f3: oklch(40% 14.265848% 95);
+--f3-focus: var(--b-m);
+--m: oklch(50% 15% 95);
+--m-acc: oklch(38% 0% 95);
+--m-acc-80: oklch(38% 0% 95 / 80%);
+
+    }
+}
+
+body, button, input { font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }

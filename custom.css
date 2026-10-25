@@ -1,0 +1,19 @@
+/* hugofloresgarcia.art theme: cream bg, black mono text (no-style-please) */
+body, body[data-pinned-theme="light"] {
+  /* plain vars (hsl fallback path) */
+  --b1: #fcf9f0; --b1-90: rgba(252,249,240,.9); --b1-80: rgba(252,249,240,.8);
+  --b2: #f3eede; --b2-80: rgba(243,238,222,.8);
+  --b3: #e6dfc8;
+  --f1: #000; --f2: #111; --f3: #333;
+  --b-acc: #000; --b-acc-80: rgba(0,0,0,.8); --f-acc: #fcf9f0;
+  --m: #444; --m-acc: #000; --m-acc-80: rgba(0,0,0,.8);
+  --b-m: #777; --f-m: #222;
+  /* oklch path */
+  --light-b1: #fcf9f0; --light-b1-90: rgba(252,249,240,.9); --light-b1-80: rgba(252,249,240,.8);
+  --light-b2: #f3eede; --light-b2-80: rgba(243,238,222,.8);
+  --light-b3: #e6dfc8;
+  --light-f1: #000; --light-f2: #111; --light-f3: #333;
+  --light-b-acc: #000; --light-b-acc-80: rgba(0,0,0,.8); --light-f-acc: #fcf9f0;
+  --light-m: #444; --light-m-acc: #000; --light-m-acc-80: rgba(0,0,0,.8);
+  --light-b-m: #777; --light-f-m: #222;
+}
